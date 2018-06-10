@@ -77,7 +77,7 @@ html {
       border: none;
       border-radius: 4px;
       padding: 10px 15px;
-      background-color: #262626;
+      background-color: rgba(0, 0, 0, 0.7);
       color: #00ff00;
       font-variant: small-caps; }
       #subscribe-hero form #submit:hover {
