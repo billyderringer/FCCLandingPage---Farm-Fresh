@@ -35,7 +35,7 @@ makeProducts = () => {
         info = document.createElement('p')
 
         title.innerHTML = products[i].name
-        info.innerHTML = 'Fresh picked' + products[i].name + '$' + products[i].price
+        info.innerHTML = 'Fresh picked <br/>' + products[i].name + '<br/>$' + products[i].price
 
         //set styles
         infoContainer.className = 'product-info center-text'
