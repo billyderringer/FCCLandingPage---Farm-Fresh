@@ -20,7 +20,6 @@ let products = [
     }
 ]
 
-
 makeProducts = () => {
     let parentNode = document.getElementById('products')
     let productContainer, imgContainer, title, infoContainer, info
@@ -53,4 +52,14 @@ makeProducts = () => {
     }
 }
 
+collapseNav = () => {
+    let x = document.getElementById("nav-bar");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 makeProducts()
+

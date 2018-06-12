@@ -73,6 +73,9 @@ html{
       font-variant: small-caps;
     }
   }
+  @media screen and (max-width: 576px) {
+    @include centerEverything(column,space-between,center);
+  }
 }
 
 #subscribe-hero{

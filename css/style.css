@@ -46,6 +46,12 @@ html {
       margin-left: 15px;
       color: white;
       font-variant: small-caps; }
+  @media screen and (max-width: 576px) {
+    #header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; } }
 
 #subscribe-hero {
   display: flex;
