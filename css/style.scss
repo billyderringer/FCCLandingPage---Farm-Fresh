@@ -60,6 +60,7 @@ html{
   top: 0;
   left: 0;
   background: $opaqueBlack;
+  z-index: 1000;
   #header-img{
     margin: 10px 0 10px 20px;
     width: 100px;
@@ -75,6 +76,12 @@ html{
   }
   @media screen and (max-width: 576px) {
     @include centerEverything(column,space-between,center);
+    #header-img{
+      margin-left: 0;
+    }
+    #nav-bar{
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -154,6 +161,7 @@ html{
     .product-container{
       width: 300px;
       height: 400px;
+      transition: all .2s ease-in-out;
       border: 5px solid $offBlack;
       border-radius: 4px;
       @media (max-width: 576px) {
@@ -180,6 +188,12 @@ html{
         width: 100%;
         font-size: .8em;
       }
+    }
+    .product-container:hover{
+      cursor: pointer;
+      transform: scale(1.05);
+      z-index: 999;
+      box-shadow: 1px 1px 8px $opaqueBlack;
     }
   }
 }
